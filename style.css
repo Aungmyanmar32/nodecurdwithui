@@ -1,0 +1,48 @@
+.container {
+  max-width: 1024px;
+  padding: 1rem;
+  align-items: center;
+  flex-direction: column;
+}
+
+.userInfo {
+  width: 70%;
+}
+.addNewUser,
+.editUserForm {
+  display: none;
+
+  background-color: bisque;
+}
+
+.addNewUser,
+button,
+.addNewUser input {
+  margin: 2px auto;
+  font-size: 0.6rem;
+}
+
+.addNewUser label {
+  font-size: 0.6rem;
+}
+
+.userUiDiv {
+  border: 1px solid black;
+  width: 100%;
+  margin: 0.3rem auto;
+  text-align: left;
+  padding: 0.5rem;
+  position: relative;
+}
+
+.btnGroup {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5rem;
+}
+.btnGroup button {
+  outline: none;
+  border: none;
+  margin: 0 0.2rem;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container d-flex justify-content-center">
+      <div class="addNewUser closed p-2 flex-column w-50">
+        <h1>New User</h1>
+        <label for="exampleInputEmail1">Name</label>
+        <input
+          type="text"
+          class="form-control newUserName"
+          id="exampleInputEmail1"
+          placeholder="Your Name"
+        />
+
+        <label for="exampleInputEmail1">Email</label>
+        <input
+          type="email"
+          class="form-control newUserEmail"
+          id="exampleInputEmail1"
+          placeholder="Email"
+        />
+
+        <button
+          type="button"
+          class="btn btn-primary"
+          onclick="registerNewUser()"
+        >
+          ADD New User
+        </button>
+      </div>
+      <div class="editUserForm closed p-2 flex-column w-50">
+        <h1>Edit User Name</h1>
+        <label for="exampleInputEmail1">Name</label>
+        <input
+          type="text"
+          class="form-control editUserName"
+          placeholder="Your Name"
+        />
+
+        <label for="exampleInputEmail1">Email</label>
+        <input
+          type="email"
+          class="form-control editUserEmail"
+          placeholder="Email"
+        />
+
+        <button type="button" class="btn btn-primary" onclick="editUserInfo()">
+          Done
+        </button>
+      </div>
+      <div class="userInfo"></div>
+      <div>
+        <button
+          onclick="popUp(addNewUser)"
+          class="popUpButton text-light bg-dark w-20 p-3"
+        >
+          Add New User
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
