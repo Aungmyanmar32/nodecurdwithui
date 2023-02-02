@@ -43,7 +43,8 @@ const popUp = (divName) => {
 
 //Get user data from server
 const getUsersFromServer = async () => {
-  const url = "https://nodecurdwithui.vercel.app/allUsers";
+  const url =
+    "https://nodecurdwithui-1021oljeb-aungmyanmar32.vercel.app/allUsers";
   const response = await fetch(url);
   const data = await response.json();
   for (let i = 0; i < data.length; i++) {
